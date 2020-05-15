@@ -4,7 +4,7 @@ Ogólny zarys projektu - w raz z pojawiającymi się materiałami będziemy twor
 
 Prawdopodobnie z każdym nowym tygodniem, po nowych lekcjach będziesz chciał/chciała refaktorować swój projekt. Nie krępuj się - nawet jest to wskazane :)
 
-Założenia podstawowe - dane, czyli listę filmów będziemy trzymali w lokalnym pliku `database.json`. Później zamienimy to na komunikację z bazą danych poprzez REST API.
+Założenia podstawowe - dane, czyli listę miejsc będziemy trzymali w lokalnym pliku `database.json`. Później zamienimy to na komunikację z bazą danych poprzez REST API.
 
 
 ## Część 1
