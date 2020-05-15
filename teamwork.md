@@ -1,5 +1,7 @@
 # Projekty zespołowe
 
+Projekty dla osób, które zdecydowały się pracować w teamach developerskich. Jeśli chcesz dołączyć do zespołu, to daj mi proszę znać na Slacku.
+
 ## Część pierwsza
 Stwórzcie stronę www waszego zespołu opartą o Reacta.
 
