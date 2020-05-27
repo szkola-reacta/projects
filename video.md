@@ -36,3 +36,38 @@ Założenia podstawowe - dane, czyli listę filmów będziemy trzymali w lokalny
 * Do wyświetlania wideo wykorzystaj albo player HTML5 lub inną bibliotekę (np. [Video.js](https://videojs.com/), [Plyr.io](https://plyr.io/))
 
 Powodzenia :)
+
+# Część 2
+Zmodyfikuj zawartość pliku `database.json`, aby zawierał unikalne identyfikatory do każdego z filmu. Np.:
+
+
+```json
+[
+  {
+  	"id": 1,
+    "title": "Mój ulubiony filmik 1",
+    "description": "Opis mojego ulubionego filmiku",
+    "video_url": "Adres URL do filmu np.: https://youtu.be/Bey4XXJAqS8"
+  },
+  {
+    "id": 2,
+    "title": "Mój ulubiony filmik 2",
+    "description": "Opis mojego ulubionego filmiku 2",
+    "video_url": "https://youtu.be/Bey4XXJAqS8"
+  }
+]
+
+```
+
+1. Dodamy Routing do aplikacji. Zmodyfikuj kod z części pierwszej w taki sposób, aby komponent `VideoList` wyświetlał się zaraz po otworzeniu aplikacji.
+
+1. Dodaj ścieżkę url `/about` gdzie będą prezentowane informacje o aplikacji.
+
+1. Dodaj ścieżkę url `/video/:id` pod którą będzie prezentowane wideo o określonym id. Tzn. jeśli mamy `/video/1` powinniśmy wyświetlić obiekt z id 1 z pliku `database.json`. Wykorzystaj do tego komponent `Video`. Jeśli wprowadzimy identyfikator, którego nie ma w `database.json`, wtedy należy wyświetlić infromacje: "Nie znaleziono filmu".
+
+1. Stwórz komponent `Page404` i wyświetlaj go zawsze, gdy ktoś wprowadzi adres url, który nie istnieje w Twojej aplikacji np. `/tosienieuda`.
+
+Powodzenia :)
+
+## Część 3
+Zaczniemy działać z API. informacje wkrótce :)

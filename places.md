@@ -53,3 +53,45 @@ Założenia podstawowe - dane, czyli listę miejsc będziemy trzymali w lokalnym
 * Pierwszy filtr umożliwi filtrowanie po miastach. Następnie wprowadzimy możliwość filtrowania po cenach
 
 Powodzenia :)
+
+## Część 2
+Zmodyfikuj zawartość pliku `database.json`, aby zawierał unikalne identyfikatory do każdego z miejsc. Np.:
+
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Nazwa miejsca",
+    "description": "Opis miejsca",
+    "foto_url": "Adres URL do zdjęcia",
+    "price": "Cena za wstęp",
+    "city": "Miasto",
+    "category": "monument",
+    "address": "Adres"
+  },
+  {
+    "id": 2,
+    "title": "Zamek Lubelski w Lublinie",
+    "description": "Super zamczysko",
+    "foto_url": "https://lublin4u.pl/media/images/m/zamek-lubelski-plac-zamkowy-donzon.jpg",
+    "price": "15",
+    "city": "Lublin",
+    "address": "Plac Zamkowy 1",
+    "category": "monument"
+  }
+]
+```
+
+1. Dodamy Routing do aplikacji. Zmodyfikuj kod z części pierwszej w taki sposób, aby komponent `PlaceList` wyświetlał się zaraz po otworzeniu aplikacji.
+
+1. Dodaj ścieżkę url `/about` gdzie będą prezentowane informacje o aplikacji.
+
+1. Dodaj ścieżkę url `/place/:id` pod którą będzie prezentowane miejsce o określonym id. Tzn. jeśli mamy `/place/1` powinniśmy wyświetlić obiekt z id 1 z pliku `database.json`. Wykorzystaj do tego komponent `Place`. Jeśli wprowadzimy identyfikator, którego nie ma w `database.json`, wtedy należy wyświetlić infromacje: "Nie znaleziono miejsca".
+
+1. Stwórz komponent `Page404` i wyświetlaj go zawsze, gdy ktoś wprowadzi adres url, który nie istnieje w Twojej aplikacji np. `/tosienieuda`.
+
+Powodzenia :)
+
+## Część 3
+Zaczniemy działać z API. informacje wkrótce :)

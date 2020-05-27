@@ -60,3 +60,49 @@ Tips: można wykorzystać: https://source.unsplash.com/ do wygenerowania danych
 * Pierwszy filtr umożliwi filtrowanie po kategoriach. Dostępne kategorie na start to: "concert" (Koncerty), "movie" (Filmy/spektakle), "event" (Wydarzenia stacjonarne)
 
 Powodzenia :)
+
+## Część 2
+Zmodyfikuj zawartość pliku `database.json`, aby zawierał unikalne identyfikatory do każdego z wydarzeń. Np.:
+
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Nazwa wydarzenia np. Koncert Fasolek",
+    "description": "Opis wydarzenia",
+    "cover_url": "Adres URL do cover foto wydarzenia",
+    "price": "Cena za bilet",
+    "city": "Miasto",
+    "category": "concert",
+    "address": "Adres",
+    "date": "Data wydarzenia",
+    "hour": "Godzina wydarzenia",
+  },
+  {
+    "id": 2,
+    "title": "Carlos Santana feat Fasolki",
+    "description": "Lorem ipsum sit dolor",
+    "cover_url": "https://static.billboard.com/files/media/santana-june-20-2019-billboard-1548-1024x677.jpg",
+    "price": "130",
+    "city": "Mexico",
+    "address": "El Gato 12",
+    "date": "28.05.2021",
+    "category": "concert",
+    "hour": "18:00",
+  }
+]
+```
+
+1. Dodamy Routing do aplikacji. Zmodyfikuj kod z części pierwszej w taki sposób, aby komponent `EventList` wyświetlał się zaraz po otworzeniu aplikacji.
+
+1. Dodaj ścieżkę url `/about` gdzie będą prezentowane informacje o aplikacji.
+
+1. Dodaj ścieżkę url `/event/:id` pod którą będzie prezentowane miejsce o określonym id. Tzn. jeśli mamy `/event/1` powinniśmy wyświetlić obiekt z id 1 z pliku `database.json`. Wykorzystaj do tego komponent `Event`. Jeśli wprowadzimy identyfikator, którego nie ma w `database.json`, wtedy należy wyświetlić infromacje: "Nie znaleziono miejsca".
+
+1. Stwórz komponent `Page404` i wyświetlaj go zawsze, gdy ktoś wprowadzi adres url, który nie istnieje w Twojej aplikacji np. `/tosienieuda`.
+
+Powodzenia :)
+
+## Część 3
+Zaczniemy działać z API. informacje wkrótce :)
