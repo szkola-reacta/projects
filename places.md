@@ -83,7 +83,7 @@ Zmodyfikuj zawartość pliku `database.json`, aby zawierał unikalne identyfika
 ]
 ```
 
-1. Dodamy Routing do aplikacji. Zmodyfikuj kod z części pierwszej w taki sposób, aby komponent `PlaceList` wyświetlał się zaraz po otworzeniu aplikacji.
+1. Dodamy Routing do aplikacji. Skorzystaj z [React Router](https://reacttraining.com/react-router/web/guides/quick-start). Zmodyfikuj kod z części pierwszej w taki sposób, aby komponent `PlaceList` wyświetlał się zaraz po otworzeniu aplikacji.
 
 1. Dodaj ścieżkę url `/about` gdzie będą prezentowane informacje o aplikacji.
 
