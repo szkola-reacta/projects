@@ -98,9 +98,14 @@ Zmodyfikuj zawartość pliku `database.json`, aby zawierał unikalne identyfika
 
 1. Dodaj ścieżkę url `/about` gdzie będą prezentowane informacje o aplikacji.
 
-1. Dodaj ścieżkę url `/event/:id` pod którą będzie prezentowane miejsce o określonym id. Tzn. jeśli mamy `/event/1` powinniśmy wyświetlić obiekt z id 1 z pliku `database.json`. Wykorzystaj do tego komponent `Event`. Jeśli wprowadzimy identyfikator, którego nie ma w `database.json`, wtedy należy wyświetlić infromacje: "Nie znaleziono miejsca".
+1. Dodaj ścieżkę url `/event/:id` pod którą będzie prezentowane miejsce o określonym id. Tzn. jeśli mamy `/event/1` powinniśmy wyświetlić obiekt z id 1 z pliku `database.json`. Wykorzystaj do tego komponent `Event`. Jeśli wprowadzimy identyfikator, którego nie ma w `database.json`, wtedy należy wyświetlić komunikat: "Nie znaleziono wydarzenia".
 
 1. Stwórz komponent `Page404` i wyświetlaj go zawsze, gdy ktoś wprowadzi adres url, który nie istnieje w Twojej aplikacji np. `/tosienieuda`.
+
+1. Stwórz komponent `EventCreateForm`, który będzie dostępny pod adresem url `/event/create`. Komponent powinien zawierać formularz z polami do tworzenia nowego obiektu, czyli posiadać pola: `title`, `description`, `cover_url`, `price`, `city`, `category`, `address`, `date`, `hour`. Po wysłaniu formularza dane powinny być dostępne w stanie komponentu.
+
+1. Stwórz komponent `EventUpdateForm`, który będzie dostępny pod adresem url `/event/:id/update`. Komponent powinien odczytać parametr `id` z adresu URL, pobrać odpowiedni obiekt z pliku `database.json`, a następnie wstawić dane tego obiektu do formularza. Formularz może być podobny do tego, który stworzyliśmy w `EventCreateForm` - możesz nawet wykorzystać ten sam komponent. Chodzi o wypełnienie formularza odpowiednimi danymi. Formularz powinien przechowywać aktualne dany w stanie komponentu.
+
 
 Powodzenia :)
 

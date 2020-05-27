@@ -63,9 +63,14 @@ Zmodyfikuj zawartość pliku `database.json`, aby zawierał unikalne identyfika
 
 1. Dodaj ścieżkę url `/about` gdzie będą prezentowane informacje o aplikacji.
 
-1. Dodaj ścieżkę url `/video/:id` pod którą będzie prezentowane wideo o określonym id. Tzn. jeśli mamy `/video/1` powinniśmy wyświetlić obiekt z id 1 z pliku `database.json`. Wykorzystaj do tego komponent `Video`. Jeśli wprowadzimy identyfikator, którego nie ma w `database.json`, wtedy należy wyświetlić infromacje: "Nie znaleziono filmu".
+1. Dodaj ścieżkę url `/video/:id` pod którą będzie prezentowane wideo o określonym id. Tzn. jeśli mamy `/video/1` powinniśmy wyświetlić obiekt z id 1 z pliku `database.json`. Wykorzystaj do tego komponent `Video`. Jeśli wprowadzimy identyfikator, którego nie ma w `database.json`, wtedy należy wyświetlić komunikat: "Nie znaleziono filmu".
 
 1. Stwórz komponent `Page404` i wyświetlaj go zawsze, gdy ktoś wprowadzi adres url, który nie istnieje w Twojej aplikacji np. `/tosienieuda`.
+
+
+1. Stwórz komponent `VideoCreateForm`, który będzie dostępny pod adresem url `/video/create`. Komponent powinien zawierać formularz z polami do tworzenia nowego obiektu, czyli posiadać pola: `title`, `description`, `video_url`. Po wysłaniu formularza dane powinny być dostępne w stanie komponentu.
+
+1. Stwórz komponent `VideoUpdateForm`, który będzie dostępny pod adresem url `/video/:id/update`. Komponent powinien odczytać parametr `id` z adresu URL, pobrać odpowiedni obiekt z pliku `database.json`, a następnie wstawić dane tego obiektu do formularza. Formularz może być podobny do tego, który stworzyliśmy w `VideoCreateForm` - możesz nawet wykorzystać ten sam komponent. Chodzi o wypełnienie formularza odpowiednimi danymi. Formularz powinien przechowywać aktualne dany w stanie komponentu.
 
 Powodzenia :)
 
